@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --preto: black;
+    --branco: white;
+    --verde: rgb(0, 255, 89);
+    --hover-color: #272727;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo {
+    background-color: var(--preto);
+    color: var(--branco);
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.cabecalho {
+    padding: 3% 15%;
+}
+
+.navegação {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+    color: var(--verde);
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.main1 {
+    padding: 6% 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.seleção {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+
+h1 {
+    font-family: 'Krona One';
+    font-size: 2rem;
+    color: var(--branco);
+}
+
+h2 {
+    font-family: 'Montserrat';
+    font-size: 1.60rem;
+    color: var(--branco);
+    text-align: center;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 1.25rem;
+    color: var(--branco);
+}
+
+.divisão {
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 3%;
+    gap: 30px;
+}
+
+.links-div {
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--branco);
+    border-style: solid;
+    border-radius: 6px;
+    width: 50%;
+    border-color: var(--verde);
+    padding: 3%;
+    text-decoration: none;
+    text-align: center;
+}
+
+.links-div:hover {
+    background-color: #272727;
+}
+
+.rodape {
+    padding: 2% 5%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.links-footer {
+    font-size: 1.25rem;
+    color: var(--verde);
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.anya {
+    border-radius: 3%;
+    width: 40%;
+}
+
+.twitch {
+    width: 15px;
+    height: 15px;
+}
+
+strong {
+    color: var(--verde);
+}
+
+@media (max-width: 850px) {
+    .main1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .seleção {
+        width: 100%;
+    }
+
+    .anya {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .links-footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .divisão {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-div {
+        padding: 4%;
+    }
+}
